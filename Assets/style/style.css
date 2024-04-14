@@ -225,14 +225,14 @@ ul, li{
     width: 181px;
     height: 170px;
     right: -53%;
-    top: 19%;
+    top: 9%;
     padding: 25px 5px 10px 25px;
     z-index: 1;
     transition: all 0.5s ease;
 }
 
 .mobile__menu-list.active{
-	transform: translate(86%, 0%);
+	transform: translate(86%, 3%);
 	opacity: 1;
 	border: 2px solid #6E9C9F;
 	position: fixed;
@@ -241,7 +241,7 @@ ul, li{
     width: 170px;
     height: 200px;
     right: 34%;
-    top: 10%;
+    top: 9%;
     padding: 25px 5px 10px 25px;
     z-index: 1;
     transition: all 0.5s ease;
@@ -1862,6 +1862,11 @@ ul, li{
 		text-align: center;
 	}
 
+	.team__link{
+		margin-top:0px;
+		margin: 28px auto 0px;
+	}
+
 	.Dream-team__description{
 		width: 100%;
 	}
@@ -2369,7 +2374,7 @@ ul, li{
 	}
 
 	.mobile__menu-list.active{
-		    transform: translate(55%, 0%);
+		    transform: translate(55%, 3%);
 	}
 
 	.foto__main{
