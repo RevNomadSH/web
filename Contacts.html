@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Контакты Woomagazine">
+	<meta name="keywords" content="Связаться с нами, магазин, напишите нам, Woomagazine">
+	<!-- OG Tags -->
+	<meta property="og:title" content="Woomagazine">
+	<meta property="og:description" content="Контакты для связи с Woomagazine">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://sitename.ru/Assets/gallery/Preview.png">
+	<meta property="og:site_name" content="Woomagazine">
+	<!-- Styling -->
+	<meta name="theme-color" content="#808590">
+	<link rel="apple-touch-icon" href="Assets/gallery/Apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="Assets/gallery/favicon.png">
+	<link rel="stylesheet" href="Assets/style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Assets/style/nice-select.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=d49468ec-4945-4e5b-9f21-faef273f7979&lang=ru_RU&" type="text/javascript"></script>
+	 <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+               center: [55.751574, 37.573856], 
+                zoom: 15,
+                controls: ['zoomControl', 'geolocationControl']
+            });
+             ymaps.geocode("г. Москва, 3-я улица Строителей, 25").then(function (res) {
+                var firstGeoObject = res.geoObjects.get(0);
+
+                var coordinates = firstGeoObject.geometry.getCoordinates();
+
+                var myPlacemark = new ymaps.Placemark(coordinates, {
+                    hintContent: '3-я улица Строителей, 25',
+                    balloonContent: 'г. Москва, 3-я улица Строителей, 25'
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+
+                myMap.setCenter(coordinates);
+            })
+             .catch(function (error) {
+                    console.error('Ошибка геокодирования: ' + error.message);
+                });
+        }
+    </script>
+	<title>Контакты</title>
+</head>
+<body>
+	<div class="preloader" id="preloader-active">
+		<div class="preloader__container">
+			<div class="preloader__elements">
+				<div class="elements__circle">
+				</div>
+				<div class="elements__image">
+					<img src="Assets/gallery/Logo-Womazing.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header" id="header">
+		<div class="sticky-header">
+		<div class="container">
+			<div class="navigation">
+				<div class="navigation__logo">
+					<a href="Homepage.html" class="navigation__home-link">
+					<img src="Assets/gallery/Logo-Womazing.svg" alt="Womazing" class="header__logo">
+					</a>
+				</div>
+				<div class="navigation__pannel">
+					<nav class="navigation__links">
+						<a href="index.html" class="pannel__page active">Главная</a>
+						<a href="Shop.html" class="pannel__page">Магазин</a>
+						<a href="About.html" class="pannel__page">О бренде</a>
+						<a href="Contacts.html" class="pannel__page">Контакты</a>
+					</nav>
+				</div>
+				<div class="navigation__telephone">
+					<div class="telephone-wrapper-modal" id="wrapper-modal">
+						<div class="telephone__overlay">
+						</div>
+						<div class="telephone__modal-window">
+							<div class="telephone-contacts__form">
+								<form action="" class="telephone-feedback__form">
+									<span class="telephone-contacts__form_index-del">
+										X
+									</span>
+									<h3 class="title__form">
+										Заказать обратный звонок
+									</h3>
+									<input type="text" class="telephone-feedback-form__input input" placeholder="Имя" name="firstName" required="">
+									<input type="text" class="telephone-feedback-form__input input" placeholder="E-mail" name="Email" required="">
+									<input type="tel" class="telephone-feedback-form__input input" placeholder="Телефон" name="phNumber" required="">
+									<a href="#" class="telephone-feedback-form__btn btn">
+										Заказать звонок
+									</a>
+								</form>
+							</div>
+						</div>
+						<div class="form__succes-message">
+								<h3 class="succes-message__title">
+									Отлично! Мы скоро вам перезвоним.
+								</h3>
+								<a href="Homepage.html" class="succes-message__close-btn btn">Закрыть</a>
+							</div>
+					</div>
+				<a href="#" class="telephone-logo"></a>
+				<a href="telto:+7-495-823-5412" class="telephone-number">+7(495)823-54-12</a>
+				</div>
+				<div class="navigation__cart-container">
+				<a href="Cart.html" class="navigation__cart">
+					<img src="Assets/gallery/shopping-bags.svg" alt="">
+				</a>
+				</div>
+					<div class="navigation__mobile-menu">
+					<nav class="mobile__menu-list">
+						<ul class="menu__list">
+							<li class="menu__item dress">
+								<a href="index.html" class="pannel__page active">Главная</a>
+							</li>
+							<li class="menu__item bag">
+								<a href="Shop.html" class="pannel__page">Магазин</a>
+							</li>
+							<li class="menu__item journal">
+								<a href="About.html" class="pannel__page">О бренде</a>
+							</li>
+							<li class="menu__item messages">
+								<a href="Contacts.html" class="pannel__page">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="button__mobile-menu">
+						<a href="#" class="mobile-menu__ready">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</a>
+					</div>
+				</div>
+				<a href="telto:+7-495-823-5412" class="telephone-number__small">+7(495)823-54-12</a>
+				</div>
+		</div>
+	</div>
+	</header>
+	<main class="contacts-content" id="contacts">
+		<div class="container">
+			<h1 class="contacts-title">
+				Контакты
+			</h1>
+			<div class="all__breadcrumbs">
+				<div class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item_link">
+							<a href="Homepage.html" class="breadcrumbs__link">
+								Главная
+							</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__index">
+								Контакты
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="map">
+				<iframe src="" width="1109" height="476" frameborder="0" id="map-ifr">	
+				</iframe>
+			</div>
+			<div class="contacts-organization">
+				<div class="organization__telephone">
+					<p class="telephone__text">
+						Телефон
+					</p>
+					<a href="tellto:+38-044-823-54-12" class="telephone__link">
+						+38 (044) 823-54-12
+					</a>
+				</div>
+				<div class="organization__email">
+					<p class="email__text">
+						E-mail
+					</p>
+					<a href="mailto:info@sitename.com" class="email__link">
+						info@sitename.com
+					</a>
+				</div>
+				<div class="organization__adress">
+					<p class="adress__text">
+						Адрес
+					</p>
+					<a href="" class="adress__link">
+						г. Киев, 3-я улица Строителей, 25
+					</a>
+				</div>
+			</div>
+			<div class="contacts__form">
+				<form action="" class="feedback-form">
+						<h2 class="title__form">
+							Напишите нам
+						</h2>
+					<input type="text" class="feedback-form__input input" placeholder="Имя" name="firstName" required="">
+					<input type="text" class="feedback-form__input input" placeholder="E-mail" name="Email" required="">
+					<input type="tel" class="feedback-form__input input" placeholder="Телефон" name="phNumber" required="">
+					<textarea class="feedback-form__message textarea" name="message" id="message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Сообщение'" placeholder="Сообщение"></textarea>
+					<button type="submit" class="feedback-form__btn">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer__logo">
+						<a href="Homepage.html" class="navigation__home-link">
+						<img src="Assets/gallery/Logo-Womazing.svg" alt="Womazing" class="footer__logo">
+						</a>
+					<div class="footer__logo__other">
+						<p class="other__text">
+							© Все права защищены
+						</p>
+						<a href="#" class="privancy-link">
+							Публичная Офферта
+						</a>
+						<a href="#" class="public-offer">
+							Политика конфиденциальности
+						</a>
+					</div>
+					</div>
+					<div class="footer__navigation">
+						<div class="Footer__navigation_pannel">
+							<nav class="Footer-navigation__links">
+								<a href="index.html" class="navigation__link pannel__page">
+									Главная
+								</a>
+								<a href="Shop.html" class="navigation__link pannel__page">
+									Магазин
+								</a>
+								<a href="About.html" class="navigation__link pannel__page">
+									О бренде
+								</a>
+								<a href="Contacts.html" class="navigation__link pannel__page">
+									Контакты
+								</a>
+							</nav>
+							<nav class="Footer-navigation__catalog-links">
+								<a href="#" class="catalog__link">
+								Пальто
+								</a>
+								<a href="#" class="catalog__link">
+								Свитшоты
+								</a>
+								<a href="#" class="catalog__link">
+								Кардиганы
+								</a>
+								<a href="#" class="catalog__link">
+								Толстовки
+								</a>
+							</nav>
+						</div>
+					</div>
+					<div class="footer-social">
+						<div class="social__contacts">
+							<a href="telto:+38 (044) 823-54-12" class="contacts-link">+38 (044) 823-54-12</a>
+							<a href="mailto:hello@womazing.com" class="contacts-link">hello@womazing.com
+							</a>
+						</div>
+						<div class="social__media">
+							<a href="#" class="media-links__instagram"></a>
+							<a href="#" class="media-links__facebook"></a>
+							<a href="#" class="media-links__twitter"></a>
+						</div>
+						<div class="system-payments">
+							<img src="Assets/gallery/visa-mastercard.png" alt="visa-mastercard">
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+		<!-- JS plugins and library-->
+	<script src="Assets/js/jquery-3.7.1.min.js"></script>
+	<script src="Assets/js/slick.min.js"></script>
+	<script src="Assets/js/jquery.nice-select.min.js"></script>
+	<script src="Assets/js/jquery.validate.js"></script>
+	<!-- Main JS script-->
+	<script src="Assets/js/main.js"></script>
+</body>
+</html>
