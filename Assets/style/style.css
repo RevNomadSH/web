@@ -2358,6 +2358,15 @@ ul, li{
 		display: none;
 	}
 
+	.telephone-feedback-form__btn{
+		width: 100%;
+	}
+
+	.telephone__modal-window{
+		width: 100%;
+		padding: 52px 20px
+	}
+
 	.foto__main{
 		width: 100%;
 		height: auto;
